@@ -1,7 +1,7 @@
+import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContactNew } from '../../redux/contacts/operations';
 import { selectContacts } from '../../redux/contacts/selectors';
-import { useForm } from 'react-hook-form';
 
 import css from './ContactForm.module.css';
 
@@ -21,19 +21,22 @@ const ContactForm = () => {
 	};
     
 	return (
-		<form onSubmit={handleSubmit(handleCreateContact)} className={css.form}>
-			<label className={css.formLabel}>
-				<span>Name:</span>
-				<input {...register('name', { required: true })} type='text' className={css.formInput} />
-				{errors.name && <span>This field is required</span>}
-			</label>
-			<label className={css.formLabel}>
-				<span>Number:</span>
-				<input {...register('number', { required: true })} type='text' className={css.formInput} />
-				{errors.number && <span>This field is required</span>}
-			</label>
-			<button type='submit' className={css.btn}>Add contact</button>
-		</form>
+		<div className={css.formWrapper}>
+			<form onSubmit={handleSubmit(handleCreateContact)} className={css.form}>
+				<div className={css.formMainContent}>
+					<h2 className={css.title}>New contact form</h2>
+
+					<input {...register('name', { required: true })} type='text' placeholder="*Name" autoFocus className={css.formInput} />
+					{errors.name && <span>This field is required</span>}
+
+					<input {...register('number', { required: true })} type='text' placeholder="*Phone number" className={css.formInput} />
+					{errors.number && <span>This field is required</span>}
+
+					<button type='submit' className={css.btn}>Add contact</button>
+				</div>
+				<p className={css.text}>*  -  Fields are required</p>
+			</form>
+		</div>
 	)	
 }
 

@@ -1,22 +1,22 @@
-import React from 'react';
-import { ColorRing } from 'react-loader-spinner';
+// import React from 'react';
+import { InfinitySpin } from 'react-loader-spinner';
+
+import css from './Loader.module.css';
 
 
 const Loader = () => {
 
     return (
-        <>
-            <ColorRing
+        <div className={css.wrapper}>
+            <InfinitySpin
                 visible={true}
-                height="80"
-                width="80"
-                ariaLabel="blocks-loading"
-                wrapperStyle={{}}
-                wrapperClass="blocks-wrapper"
-                colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+                width="200"
+                color="var(--primary-yellow-color)"
+                ariaLabel="infinity-spin-loading"
             />
-        </>
+        </div>
     );
 };
+
 
 export default Loader;

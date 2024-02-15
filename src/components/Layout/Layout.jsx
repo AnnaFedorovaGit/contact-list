@@ -13,14 +13,14 @@ const Layout = () => {
 
     return (
         // <Suspense fallback={<>is loading</>}>
-        <>
-            <header className={css.wrapper}>
+        <div className={css.wrapper}>
+            <header className={css.header}>
                 <Navigation/>
             </header>
             <main>
                 <Outlet/>
             </main>
-        </>
+        </div>
         /* </Suspense> */
     )
 }

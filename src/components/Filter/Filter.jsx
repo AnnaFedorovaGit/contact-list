@@ -16,8 +16,7 @@ const Filter = () => {
 
     return (
         <div className={css.wrapper}>
-            <p className={css.text}>Find contact by name:</p>
-            <input type="text" name="filter" className={css.input} value={filter} onChange={handleFilter} />
+            <input type="text" name="filter" placeholder="Find contact" className={css.input} value={filter} onChange={handleFilter} />
         </div>
     )
 }

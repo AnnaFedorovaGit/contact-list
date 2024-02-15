@@ -1,10 +1,13 @@
+// import css from './HomePage.module.css';
 
 
 const HomePage = () => {
 
     return (
         <div>
-            <p>HomePage</p>
+            {/* <div className={css.wrapper}> */}
+                <p>HomePage</p>
+            {/* </div> */}
         </div>
     );
 }

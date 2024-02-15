@@ -15,13 +15,13 @@ const Navigation = () => {
     }
 
     return (
-        <nav>
+        <nav className={css.wrapper}>
             <NavLink className={({ isActive }) => `${css['headerLink']} ${isActive ? css.active : ''}`} to='/'>Home</NavLink>
             
             {isSignedIn ? (
                 <>
                     <NavLink className={({ isActive }) => `${css['headerLink']} ${isActive ? css.active : ''}`} to='/contacts'>Contacts</NavLink>
-                    <button onClick={handleLogout}>Log out</button>
+                    <button onClick={handleLogout} className={css.button}>Log out</button>
                 </>
             ) : (
                 <>

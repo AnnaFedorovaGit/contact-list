@@ -23,7 +23,7 @@ const App = () => {
 	}, [dispatch])
 
 	return (
-		isLoading ? <Loader/> : (
+		!isLoading && (
 			<Suspense fallback={<Loader/>}>
 			<Routes>
 				<Route path="/" element={<Layout />}>
@@ -33,7 +33,6 @@ const App = () => {
 					<Route path='/contacts' element={<PrivateRoute><ContactListPage /></PrivateRoute>} />
 				</Route>
 				<Route path='*' element={<h1>error</h1>} />
-				{/* <Route path="*" element={<Navigate to="/" replace />} /> */}
 			</Routes>
 		</Suspense >
 		)
