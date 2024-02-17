@@ -10,7 +10,7 @@ const Filter = () => {
     const filter = useSelector(selectFilter);
 
     const handleFilter = ({ target: { value } }) => { 
-        // sort - по порядку 
+        // add sort - по порядку 
 		dispatch(setFilter(value));
 	}
 

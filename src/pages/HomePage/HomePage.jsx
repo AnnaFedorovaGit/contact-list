@@ -5,9 +5,8 @@ const HomePage = () => {
 
     return (
         <div>
-            {/* <div className={css.wrapper}> */}
-                <p>HomePage</p>
-            {/* </div> */}
+            <h1>Phonebook</h1>
+            <p>HomePage</p>
         </div>
     );
 }

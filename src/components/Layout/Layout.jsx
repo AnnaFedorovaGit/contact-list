@@ -1,10 +1,5 @@
-// import { useDispatch, useSelector } from 'react-redux'
-// import { setFilter } from '../../redux/filterSlice'
-// import { selectFilter } from '../../redux/selectors'
-
-import Navigation from "components/Navigation/Navigation";
-// import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
+import UserMenu from 'components/UserMenu/UserMenu';
 
 import css from './Layout.module.css'
 
@@ -12,18 +7,16 @@ import css from './Layout.module.css'
 const Layout = () => {
 
     return (
-        // <Suspense fallback={<>is loading</>}>
-        <div className={css.wrapper}>
+        <>
             <header className={css.header}>
-                <Navigation/>
+                <UserMenu />
             </header>
             <main>
                 <Outlet/>
             </main>
-        </div>
-        /* </Suspense> */
+        </>
     )
 }
 
 
-export default Layout
+export default Layout;
