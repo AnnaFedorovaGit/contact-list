@@ -13,7 +13,8 @@ const RegisterPage = () => {
     
     const validationSchema = yup.object().shape({
         name: yup.string().required(),
-        email: yup.string().matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/).required(),
+        email: yup.string().matches(/^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/).required(),
+        // email: yup.string().matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/).required(),
         password: yup.string().min(7).required(),
     });
     

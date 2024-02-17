@@ -18,7 +18,7 @@ const ContactListPage = () => {
 
     const contacts = useSelector(selectContacts);
     const isLoading = useSelector(selectIsLoading);
-    // const error = useSelector(selectError);
+    const error = useSelector(selectError);
     const filter = useSelector(selectFilter);
     const filteredContactsList = useSelector(filteredContacts);
 
@@ -33,7 +33,8 @@ const ContactListPage = () => {
 
     return (
         <>
-            {/* {error && <ErrorMessage message={error} />} */}
+            {/* Check error */}
+            {error && <p>{error}</p>}
             <div className={css.wrapper}>
                 <div>
                     <ContactForm />

@@ -11,7 +11,8 @@ const LoginPage = () => {
     const dispatch = useDispatch();
 
     const validationSchema = yup.object().shape({
-        email: yup.string().matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/).required(),
+        email: yup.string().matches(/^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/).required(),
+        // email: yup.string().matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/).required(),
         password: yup.string().min(7).required(),
     });
     
