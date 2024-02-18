@@ -36,8 +36,8 @@ const HomePage = () => {
                     className={css.image}
                     src={contactsBook}
                     alt="A notebook"
-                    width="220"
-                    height="100"
+                    width="190"
+                    height="220"
                 />
             </div>
         </div>

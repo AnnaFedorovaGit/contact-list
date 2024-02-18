@@ -2,3 +2,19 @@
   display: flex;
   justify-content: center;
 }
+
+.backgroundImage {
+  width: 300px;
+  height: 100vh;
+  right: 55px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.6),
+      rgba(46, 47, 66, 0.6)
+    ),
+    url('../../images/bg-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: absolute;
+  z-index: -1;
+}
