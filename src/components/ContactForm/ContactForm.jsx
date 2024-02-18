@@ -16,12 +16,12 @@ const ContactForm = () => {
 		let duplicate = '';
 
 		for (const item of contacts) {
-			if (item.name === data.name) {
+			if (item.name.toLowerCase() === data.name.toLowerCase()) {
 				duplicate = data.name
 				break;
 			}
 			
-			if (item.number === data.number) {
+			if (item.number.toLowerCase() === data.number.toLowerCase()) {
 				duplicate = data.number;
 				break;
 			}
