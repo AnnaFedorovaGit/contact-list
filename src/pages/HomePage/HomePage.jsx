@@ -9,7 +9,7 @@ const HomePage = () => {
 
         <div className={css.wrapper}>
             <div className={css.inner}>
-                <h1 className={css.title}>Contacts list</h1>
+                <h1 className={css.title}>Contact list</h1>
                 <h2 className={css.subject}>About Us</h2>
                 <p className={css.text}>On our website you can create a List of your contacts!</p>
                     <div className={css.textWrapper}>

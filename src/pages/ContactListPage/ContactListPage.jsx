@@ -40,7 +40,7 @@ const ContactListPage = () => {
                     <ContactForm />
                 </div>
                 <div className={css.inner}>
-                    <h2 className={css.title}>Contacts list</h2>
+                    <h2 className={css.title}>Contact list</h2>
 
                     
                     {isLoading ? <Loader /> : (
@@ -53,13 +53,13 @@ const ContactListPage = () => {
                                         width="220"
                                         height="100"
                                     />
-                                    <p className={css.text}>Contacts list is empty.</p>
+                                    <p className={css.text}>Contact list is empty.</p>
                                     <p className={css.animatedText}>Start adding your contacts!</p>
                                 </div>) : (
 
                                 <>
                                     <Filter />
-                                    <ul className={css.contactsList}>
+                                    <ul className={css.contactList}>
                                             
                                         
                                     {(filter.length > 0 ? filteredContactsList : contacts
