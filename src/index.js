@@ -12,7 +12,7 @@ import './index.css';
 
 const root = document.getElementById("root")
 ReactDOM.createRoot(root).render(
-    <BrowserRouter basename='/goit-react-hw-08-phonebook'>
+    <BrowserRouter basename='/contact-list'>
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
                 <App />

@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-08-phonebook",
+  "name": "contact-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://annafedorovagit.github.io/goit-react-hw-08-phonebook/",
+  "homepage": "https://annafedorovagit.github.io/contact-list/",
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^3.3.4",
