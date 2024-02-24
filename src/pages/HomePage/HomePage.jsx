@@ -14,16 +14,24 @@ const HomePage = () => {
         <div className={css.wrapper}>
             <div className={css.inner}>
                 <h1 className={css.title}>Contact list</h1>
-                {user.name ? 
-                    <h2 className={css.subject}>Welcome back, {user.name}!</h2> : (
-                        <>
-                            <h2 className={css.subject}>About Us</h2>
-                            <p className={css.text}>On our website you can create a List of your contacts!</p>
-                                <div className={css.textWrapper}>
-                                    <p>All you need is:</p>
-                                <p className={css.tickedText}><IconTick className={css.icon} />register.</p>
 
-                                    <p>After register you will be provided with:</p>
+                {!user.name ? 
+                    <h2 className={css.subject}>About Us</h2> :
+                    <h2 className={css.subject}>Welcome, {user.name}!</h2>
+                }
+                    <p className={css.text}>On our website you can create a List of your contacts!</p>
+                    <div className={css.textWrapper}>
+                    
+                    {!user.name ?
+                        <>
+                            <p>All you need is:</p>
+                            <p className={css.tickedText}><IconTick className={css.icon} />register.</p>
+                        </> : ''
+                    }
+                            {!user.name ?
+                                <p>After register you will be provided with:</p> :
+                                <p>You can use:</p>
+                            }
                                     <ul>
                                         <li>
                                             <p className={css.tickedText}><IconTick className={css.icon} />a Form for adding new contacts,</p>
@@ -37,18 +45,15 @@ const HomePage = () => {
                                     </ul>
 
                                     <p>Your Contacts List is not shared with third parties.</p>
-                                </div>
-                        </>
-                )}
-                
+                                </div>            
                
-                <img
-                    className={css.image}
-                    src={contactsBook}
-                    alt="A notebook"
-                    width="190"
-                    height="220"
-                />
+                    <img
+                        className={css.image}
+                        src={contactsBook}
+                        alt="A notebook"
+                        width="190"
+                        height="220"
+                    />
             </div>
         </div>
             
