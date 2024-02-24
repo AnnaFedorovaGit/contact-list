@@ -4,20 +4,12 @@
 }
 
 .backgroundImage {
-  width: 355px;
-  height: 100vh;
-  /* height: 400px; */
-  right: 55px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.6),
-      rgba(46, 47, 66, 0.6)
-    ),
-    url('../../images/bg-image.jpg');
-  /* opacity: 0.3; */
-  /* background-image: url('../../images/bg-image2.png'); */
+  width: 445px;
+  height: 400px;
+  right: 0;
+  opacity: 0.3;
+  background-image: url('../../images/bg-image.png');
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right top;
   position: absolute;
   z-index: -1;
 }

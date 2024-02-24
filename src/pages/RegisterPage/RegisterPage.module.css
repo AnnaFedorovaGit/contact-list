@@ -44,6 +44,13 @@
   box-shadow: 4px 5px 21px 0px var(--primary-yellow-shadow);
 }
 
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 1s, color 5000s ease-in-out 1s;
+}
+
 .errorMessage {
   color: var(--primary-red-color);
   margin-right: auto;

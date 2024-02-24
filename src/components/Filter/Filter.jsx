@@ -10,7 +10,6 @@ const Filter = () => {
     const filter = useSelector(selectFilter);
 
     const handleFilter = ({ target: { value } }) => { 
-        // add sort - по порядку 
 		dispatch(setFilter(value));
 	}
 
@@ -22,4 +21,4 @@ const Filter = () => {
 }
 
 
-export default Filter
+export default Filter;
