@@ -45,14 +45,3 @@ p {
   padding: 0 15px 0 10px;
   fill: var(--primary-green-color);
 }
-
-.image {
-  position: absolute;
-  top: -8px;
-  right: -126px;
-  rotate: 5deg;
-  z-index: -1;
-  opacity: 0.4;
-  border-radius: 48px;
-  box-shadow: -1px 1px 15px var(--primary-yellow-color);
-}

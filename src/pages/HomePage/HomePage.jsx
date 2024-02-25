@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 import { selectAuthUserData } from '../../redux/auth/selectors';
 
 import css from './HomePage.module.css';
-import contactsBook from '../../images/contacts_book-image.png';
 import { ReactComponent as IconTick } from 'images/tick_square-icon.svg';
 
 
@@ -15,8 +14,7 @@ const HomePage = () => {
             <div className={css.inner}>
                 <h1 className={css.title}>Contact list</h1>
 
-                {!user.name ? 
-                    <h2 className={css.subject}>About Us</h2> :
+                {!user.name ? '' :
                     <h2 className={css.subject}>Welcome, {user.name}!</h2>
                 }
                     <p className={css.text}>On our website you can create a List of your contacts!</p>
@@ -46,14 +44,6 @@ const HomePage = () => {
 
                                     <p>Your Contacts List is not shared with third parties.</p>
                                 </div>            
-               
-                    <img
-                        className={css.image}
-                        src={contactsBook}
-                        alt="A notebook"
-                        width="190"
-                        height="220"
-                    />
             </div>
         </div>
             
